@@ -1,0 +1,30 @@
+{
+  "require": {
+    "yiisoft/yii2": "~2.0.0",
+    "guzzlehttp/guzzle": "^7.8",
+    "hflabs/dadata": "^22.3"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    },
+    {
+      "type": "composer",
+      "url": "https://satis.fix-price.ru"
+    }
+  ],
+  "config": {
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "rm -rf vendor/bower-asset"
+    ],
+    "post-update-cmd": [
+      "rm -rf vendor/bower-asset"
+    ]
+  }
+}

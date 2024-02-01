@@ -1,0 +1,13 @@
+
+# local phpunit config
+/phpunit.xml
+
+# vagrant runtime
+/.vagrant
+
+# runtime files
+/runtime/*
+!/runtime/.gitkeep
+
+#xdebug
+/xdebug
